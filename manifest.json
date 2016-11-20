@@ -1,0 +1,18 @@
+{
+   "content_scripts": [ {
+      "js": [ "jquery-1.11.2.min.js", "wikipediaHover.js" ],
+      "matches": [ "http://*.wikipedia.org/*" ]
+   } ],
+   "description": "Changes the title text for wikipedia links to be the first paragraph of that page",
+   "icons": {
+      "128": "images/wikipediaicon128.png",
+      "16": "images/wikipediaicon16.png",
+      "48": "images/wikipediaicon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoxKwYzSCm4ifGnGWw+VQ7HXEXD75esGbqIVOBoCEIn0b5HZVqoLo9ajuAvaGCrJd0xJ7M74wuI3bPukfQ6GXo6kSERQQv3D16sSTrmki6h7+gggYhM0p8uCGAtNcGf1/MHAushU08NA1W0ljbCJhFMaUYnLsbyWd4lAFILLSt5rqbaNaHag/ZWi3YdAKXT0m/NRfRR+tr07tsOhbT6lE3jOnmB3c+AqbrqfpDjR1lzmdk2RbkKemWX5Bxt+d3SBbYjsfPTULjfQ72byuWFhGG3eaBPkb7IwDbt9gjceem8/OFNN/jtQekMMmNQE2hRoDeFnrNudh7dtzuleVnPpQpQIDAQAB",
+   "manifest_version": 2,
+   "name": "Wikipedia Link Expander",
+   "permissions": [ "tabs", "activeTab", "contentSettings", "http://*.wikipedia.org/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.1"
+}
